@@ -53,3 +53,7 @@ header, main, footer {
   main {
     flex: 1 0 auto;
   }
+
+  main ul p a {
+    color: #f57f17;
+  }
