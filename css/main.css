@@ -57,3 +57,7 @@ header, main, footer {
   main ul p a {
     color: #f57f17;
   }
+
+    ul.side-nav.fixed li:hover, ul.side-nav.fixed li.active {
+   background-color: rgba(0, 0, 0, 0.25);
+}

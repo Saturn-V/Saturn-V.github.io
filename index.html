@@ -16,7 +16,7 @@
 		 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
 	</head>
 
-	<body>
+	<body style="background-color: #F4D00C">
 		 <!--Import jQuery before materialize.js-->
 		 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		 <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -25,17 +25,19 @@
 		 <header>
 		 	 <!-- SideBar, SlideOut, NavigationBar -->
 			 <!-- NavBar -->
-			 <nav class="top-nav indigo darken-4 z-depth-2">
+			 <nav style="background-color: #004C70">
 				 <div class="nav-wrapper container">
-				 	 <a class="page-title hide-on-large-only" style="font-size: 12px">Abraham Lincoln High School</a>
-				 	 <a class="page-title hide-on-med-and-down" style="font-size: 30px">Abraham Lincoln High School</a>
+				 	 <a class="brand-logo hide-on-large-only" style="font-size: 25px">Abraham Lincoln High School</a>
+				 	 <a class="brand-logo hide-on-med-and-down" style="font-size: 30px; margin-left: -235px">Abraham Lincoln High School</a>
+				 	 <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i class="medium mdi-navigation-menu material-icons"></i></a>
+
 
 			 <!-- SideBar -->
-				     <ul id="slide-out" class="side-nav full fixed grey lighten-4 z-depth-5" style="width: 240px">
+				     <ul id="slide-out" class="side-nav full fixed z-depth-5" style="width: 240px; background-color: #006495">
 
 				     	 <li style="height: 175px">
 				     	 	 <a href="index.html">
-				     	 		 <img style="width: 85%; padding-left: 25px; padding-top: 10px" src="img/lion.png" alt="lion"/>
+				     	 		 <img style="width: 75%; padding-left: 40px; padding-top: 10px" src="img/lion.png" alt="lion"/>
 				     	 	 </a>
 				     	 </li>
 
@@ -46,16 +48,16 @@
 				     	 	 <ul class="collapsible collapsible-accordion">
 
 						     	 	 <li class="bold">
-										 <div class="collapsible-header">
+										 <div class="collapsible-header" style="padding: 0%; margin: 0%">
 
-					     	 	 	 	 	 <a class="waves-effect ">School Information</a>
+					     	 	 	 	 	 <a class="waves-effect white-text">School Information</a>
 
 					     	 	 	 	 </div>							     
 
 						     	 	 <div class="collapsible-body" style="display: none">
 						   	 	 	 	 <ul>
 						   	 	 	 		 <li>
-					    	 	 	 		 	 <a href="#">About Us</a>
+					    	 	 	 		 	 <a href="aboutUs.html">About Us</a>
 					     	 	 	 		 </li>
 
 					     	 	 	 		 <li>
@@ -93,9 +95,9 @@
 
 						   	 	 <li class="bold">
 
-					    	 	 	 <div class="collapsible-header">
+					    	 	 	 <div class="collapsible-header" style="padding: 0%; margin: 0%">
 
-					     	 	 	 	 <a class="waves-effect">Programs</a>
+					     	 	 	 	 <a class="waves-effect white-text">Programs</a>
 
 					     	 	 	 </div>
 
@@ -144,9 +146,9 @@
 
 						     	 	 <li class="bold">
 
-						     	 	 	 <div class="collapsible-header">
+						     	 	 	 <div class="collapsible-header" style="padding: 0%; margin: 0%">
 
-						     	 	 	 	 <a class="waves-effect">Lincoln News</a>
+						     	 	 	 	 <a class="waves-effect white-text">Lincoln News</a>
 
 						     	 	 	 </div>
 
@@ -175,9 +177,9 @@
 
 						     	 	 <li class="bold">
 
-						     	 	 	 <div class="collapsible-header">
+						     	 	 	 <div class="collapsible-header" style="padding: 0%; margin: 0%">
 
-						     	 	 	 	 <a class="waves-effect">Get Involved</a>
+						     	 	 	 	 <a class="waves-effect white-text">Get Involved</a>
 
 						     	 	 	 </div>
 
@@ -222,9 +224,9 @@
 
 						     	 	 <li class="bold">
 
-						     	 	 	 <div class="collapsible-header">
+						     	 	 	 <div class="collapsible-header" style="padding: 0%; margin: 0%">
 
-						     	 	 	 	 <a class="waves-effect">Quick Links</a>
+						     	 	 	 	 <a class="waves-effect white-text">Quick Links</a>
 
 						     	 	 	 </div>
 
@@ -252,20 +254,19 @@
 						
 
 						 <li class="bold">
-						 	 <div class="collapsible-header">
-						     	 <a href="#" class="waves-effect waves-amber accent-4">Enroll</a>
+						 	 <div class="collapsible-header" style="padding: 0%; margin: 0%">
+						     	 <a href="#" class="waves-effect white-text">Enroll</a>
 						     </div>
 						 </li>
 
 						 <li class="divider"></li>
 
 						 <li class="bold">
-						 	 <div class="collapsible-header">
-						     	 <a href="#" class="waves-effect waves-amber accent-4">FAQ</a>
+						 	 <div class="collapsible-header" style="padding: 0%; margin: 0%">
+						     	 <a href="#" class="waves-effect white-text">FAQ</a>
 						     </div>
 						 </li>
 					 </ul>
-					 <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i class="medium mdi-navigation-menu material-icons" style="padding-right: 85px"></i></a>
 				 </div>
 			 </nav>
 
@@ -274,48 +275,102 @@
 
 		 <main>
 
-		 	 <!-- slide -->
-		 	 <div class="yellow darken-4 z-depth-3 slider">
-			     <ul class="slides">
-			      	 <li>
-			        	 <img src="https://c1.staticflickr.com/3/2776/4287167570_cdaff94d13_b.jpg"> <!-- random image -->
-			        	 <div class="caption center-align">
-			          	 	 <h3>News No.1</h3>
-			          		 <h5 class="light grey-text text-lighten-3">Description</h5>
-			         	 </div>
-			     	 </li>
+		 	 <!-- Introduction Card -->
+	 	 	 <div class="row">
+			     <div class="col s12 m7 l12">
+      			     <div class="card z-depth-3" style="background-color: #004C70">
+           				 <div class="card-image">
+            				 <img style="height: 300px" src="img/teal.jpg">
+             			 </div>
+             			 <div class="card-content white-text" style="font-weight: 200; font-size: 55px">
+            			 	 <p>Welcome.</p>
+             			 </div>
 
-			      	 <li>
-			       		 <img src="https://c1.staticflickr.com/3/2776/4287167570_cdaff94d13_b.jpg"> <!-- random image -->
-			       		 <div class="caption left-align">
-			         		 <h3>News No.2</h3>
-			         		 <h5 class="light grey-text text-lighten-3">Description</h5>
-			       		 </div>
-			     	 </li>
-
-			     	 <li>
-			       		 <img src="https://c1.staticflickr.com/3/2776/4287167570_cdaff94d13_b.jpg"> <!-- random image -->
-			       		 <div class="caption right-align">
-			          		 <h3>News No.3</h3>
-			        		 <h5 class="light grey-text text-lighten-3">Description</h5>
-			        	 </div>
-			      	 </li>
-
-			     	 <li>
-			       		 <img src="https://c1.staticflickr.com/3/2776/4287167570_cdaff94d13_b.jpg"> <!-- random image -->
-			        	 <div class="caption center-align">
-			          		 <h3>News No.4</h3>
-			       	  		 <h5 class="light grey-text text-lighten-3">Description</h5>
-			       		 </div>
-			     	 </li>
-			     </ul>
-			     <span class="white-text" style="font-size: 28px; padding-left: 21px">Welcome.</span>
-  			 </div>
-
-    		 <!-- "Important" div -->
-    		 <div class="yellow darken-4 center-align" style="width: 100%; height: 100px; padding-top: 30px">
-    		 	 <span style="font-size: 30px" class="white-text"><strong>Important</strong></span>
+             			 <div class="card-content white-text" style="font-weight: 300; font-size: 22.5px; border-top: 1px solid rgba(160,160,160,0.2)">
+            			 	 <p>LHS | Where students <i class="amber-text" style="font-weight: 200">do</i> <i class="amber-text" style="font-weight: 200">right</strong>.</p>
+             			 </div>
+            		 </div>
+       		 	 </div>
     		 </div>
+
+    		 <div class="row">
+		     	 <div class="col s12">
+		     		 <ul class="tabs z-depth-4" style="background-color: #004C70">
+			     		 <li class="tab col s3"><a href="#news" class="amber-text active" style="font-style: normal">News</a></li>
+		        		 <li class="tab col s3"><a href="#test2" class="amber-text" style="font-style: normal">Test 2</a></li>
+		        		 <li class="tab col s3"><a href="#test3" class="amber-text" style="font-style: normal">Disabled Tab</a></li>
+		        		 <li class="tab col s3"><a href="#test4" class="amber-text" style="font-style: normal">Test 4</a></li>
+		      		 </ul>
+		    	 </div>
+
+				 <div id="news" class="col s12">
+
+			    	 <div class="card hoverable" style="background-color: #004C70">
+	               		 <div class="card-content">
+	                   		 <p class="white-text" style="font-size: 43px; font-weight: 200; font-style: normal">News</p>
+	                 		 </div>
+	             		 </div>
+
+	             		 <div class="card blue-grey darken-4 hoverable">
+		       				 <div class="card-image waves-effect waves-black waves-block">
+		      					 <img class="activator" style="height: 200px" src="img/teal.jpg">
+		      				 </div>
+		      				 <div class="card-content">
+		      					 <span class="card-title activator white-text">Administrator<i class="material-icons right">more_vert</i></span>
+		      				 </div>
+		      				 <div class="card-reveal">
+		      					 <span class="card-title grey-text text-darken-4">Administrator<i class="material-icons right">close</i></span>
+		      					 <p>Here is some more information about this product that is only revealed once clicked on.</p>
+		      				 </div>
+	       				 </div>
+
+	       				  <div class="card blue-grey darken-4 hoverable">
+		       				 <div class="card-image waves-effect waves-black waves-block">
+		      					 <img class="activator" style="height: 200px" src="img/teal.jpg">
+		      				 </div>
+		      				 <div class="card-content">
+		      					 <span class="card-title activator white-text">Administrator<i class="material-icons right">more_vert</i></span>
+		      				 </div>
+		      				 <div class="card-reveal">
+		      					 <span class="card-title grey-text text-darken-4">Administrator<i class="material-icons right">close</i></span>
+		      					 <p>Here is some more information about this product that is only revealed once clicked on.</p>
+		      				 </div>
+	       				 </div>
+
+	       				  <div class="card blue-grey darken-4 hoverable">
+		       				 <div class="card-image waves-effect waves-black waves-block">
+		      					 <img class="activator" style="height: 200px" src="img/teal.jpg">
+		      				 </div>
+		      				 <div class="card-content">
+		      					 <span class="card-title activator white-text">Administrator<i class="material-icons right">more_vert</i></span>
+		      				 </div>
+		      				 <div class="card-reveal">
+		      					 <span class="card-title grey-text text-darken-4">Administrator<i class="material-icons right">close</i></span>
+		      					 <p>Here is some more information about this product that is only revealed once clicked on.</p>
+		      				 </div>
+	       				 </div>
+
+	       				  <div class="card blue-grey darken-4 hoverable">
+		       				 <div class="card-image waves-effect waves-black waves-block">
+		      					 <img class="activator" style="height: 200px" src="img/teal.jpg">
+		      				 </div>
+		      				 <div class="card-content">
+		      					 <span class="card-title activator white-text">Administrator<i class="material-icons right">more_vert</i></span>
+		      				 </div>
+		      				 <div class="card-reveal">
+		      					 <span class="card-title grey-text text-darken-4">Administrator<i class="material-icons right">close</i></span>
+		      					 <p>Here is some more information about this product that is only revealed once clicked on.</p>
+		      				 </div>
+	       				 </div>
+
+				     </div>
+
+			         <div id="test2" class="col s12">Test 2</div>
+			    	 <div id="test3" class="col s12">Test 3</div>
+			    	 <div id="test4" class="col s12">Test 4</div>
+
+			   	 </div>
+
 
     		 <!-- Alert card -->
     		 <div class="row">
