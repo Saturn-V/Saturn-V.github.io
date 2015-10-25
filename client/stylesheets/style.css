@@ -1,0 +1,22 @@
+  ul.side-nav li:hover, ul.side-nav.fixed li.active {
+   background-color: rgba(0, 0, 0, 0.25);
+}
+
+body {
+    display: flex !important;
+    min-height: 100vh !important;
+    flex-direction: column !important;
+    background-color: #37474f !important;
+  }
+
+  main {
+    flex: 1 0 auto !important;
+  }
+
+  .tabs .indicator{
+  	background-color: #009688;
+  }
+
+  #comment {
+    right: 10px !important;
+  }

@@ -1,0 +1,38 @@
+<template name="departmentOverview">
+
+     {{#if currentUser}}
+         {{> signedInHeader}}
+     {{else}}
+         {{> notSignedInHeader}}
+     {{/if}}
+ <!-- Department title -->
+                               <div class="card blue-grey darken-4 hoverable">
+                                     <div class="card-content">
+                                           <p class="white-text" style="font-size: 43px; font-weight: 200">Department</p>
+                                           <div class="divider"></div>
+                                           <p class="white-text" style="font-size: 25px; font-weight: 200">Choose the department your question pertains to.</p>
+                                     </div>
+                               </div>
+
+<div class="row">
+    {{#each departments}}
+    <a href="/coursesOverview/{{_id}}">
+      
+        <div class="col s12 m4 l4">
+          <div class="card blue-grey darken-4 hoverable waves-effect waves-black">
+            <div class="card-image">
+              <img src="{{imageURL}}">
+              <span class="card-title">{{name}}</span>
+            </div>
+            <div class="card-content white-text" style="font-weight: 300">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+        </div>
+        </a>
+    
+   {{/each}}
+  </div>
+    {{> footer}}
+</template>

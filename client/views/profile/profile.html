@@ -1,0 +1,60 @@
+<template name="profile">
+
+         {{#if currentUser}}
+             {{> signedInHeader}}
+         {{else}}
+             {{> notSignedInHeader}}
+         {{/if}}
+
+	 	 <main>
+                   
+                   <div class="container">
+                         <div class="row teal" style="margin-bottom: 0px">
+                               <img class="col offset-s5 s2 circle" src="img/user.png" alt="#" style="margin-top: 50px; margin-bottom: 5px">
+                               <div class="col s12 divider"></div>
+                               <h1 class="col s12 center-align white-text" style="font-weight: 300">{{fullName}}</h1>
+                         </div>
+
+                         <div class="row teal">
+                               <div class="col offset-s4 s4">
+                                     <div class="card">
+                                           <div class="card-content">
+                                                 <span class="card-title activator grey-text text-darken-4" style="font-size: 40px">About Me</span>
+                                           </div>
+                                           <div class="card-reveal" id="expand height-change">
+                                                 <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                                 <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                           </div>
+                                     </div>
+                                </div>
+                         </div>
+                   </div>
+            
+             </main>
+
+	 	 <footer class="page-footer blue-grey darken-4 hoverable">
+          		 <div class="container">
+             		 <div class="row">
+              			 <div class="col l6 s12">
+                				 <h5 class="white-text">Footer Content</h5>
+                				 <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+             			 </div>
+             			 <div class="col l4 offset-l2 s12">
+              				 <h5 class="white-text">Links</h5>
+               				 <ul>
+                  				 <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  				 <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  				 <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  				 <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+               				 </ul>
+             			 </div>
+           			 </div>
+          		 </div>
+         		 <div class="footer-copyright z-depth-3">
+             		 <div class="container">
+            		 © 2014 Copyright Text
+            			 <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+           			 </div>
+          		 </div>
+	 	 </footer>
+</template>
