@@ -50,12 +50,12 @@
     color: #F4D00C;
   }
 
-    ul.side-nav.fixed li:hover, ul.side-nav.fixed li.active {
+ul.side-nav.fixed li:hover, ul.side-nav.fixed li.active {
    background-color: rgba(0, 0, 0, 0.25);
 }
 
 .lincoln-blue {
-  background-color: #006495 !important
+  background-color: #448AFF !important
 }
 
 .lincoln-blue-darken {
@@ -63,5 +63,9 @@
 }
 
 .lincoln-yellow {
-  background-color: #F4D00C !important
+  background-color: #FFC107 !important
+}
+
+.lincoln-yellow-darken {
+  background-color: #FFA000 !important
 }
