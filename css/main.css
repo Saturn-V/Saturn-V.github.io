@@ -42,7 +42,47 @@
 	background-color: #f2f2f2
 }
 
-.content {
+.blue-dark {
+	background-color: #264d73;
+}
+
+.yellow-dark {
+	background-color: #f9a825 !important;
+}
+
+.content-outer {
+	position: absolute;
 	clear: both;
-	overflow: auto;
+}
+
+.content-inner {
+	position: relative;
+	clear: both;
+}
+
+.blur {
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+}
+
+.off-white-to-blue {
+	background: linear-gradient(#f2f2f2 ,#0d47a1)
+}
+
+.opacity {
+	opacity: .4
+}
+
+//footer details
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
 }
