@@ -17,9 +17,10 @@
 	      <script type="text/javascript" src="js/materialize.min.js"></script>
 
 		<!-- Home/Banner -->
-		<div id="home" style="width: 100%; height: 85%">
+		<div id="home" class="off-white" style="max-width: 100%; max-height: 85%">
+
 			<div class="navbar-fixed">
-		      	<nav class="dark-primary">
+		      	<nav class="off-white">
 				    	<div class="nav-wrapper">
 				      	<a href="#home" class="brand-logo text-icon-color" style="padding-left: 20px; font-weight: 200">
 	            				<b class="text-icon-color" style="font-weight: 400">
@@ -47,28 +48,28 @@
 				</nav>
 			</div>
 
-			<img src="img/hackTheBayBackground.svg" alt="#" style="width: 75%; padding-left: 282.31px; padding-top: 75px"/>
+			<img class="content" src="img/GGBridge.jpg" alt="#" style="max-width: 100%"/>
 		</div>
 
 		<!-- About -->
-		<div id="about"class="primary" style="width: 100%; height: 85%">
+		<div id="about" class="accent-color content" style="max-width: 100%; max-height: 100%">
 
 			<!-- title -->
-			<h1 class="container" style="padding-top: 7%">
+			<h1 class="container text-icon-color" style="padding-top: 7%">
 				<b style="font-weight: 500; font-size: 40px">
 					ABOUT
 				</b>
 			</h1>
 
 			<!-- header -->
-			<h1 class="container" style="padding-top: 20px; font-weight: 300; font-size: 40px">
+			<h1 class="container text-icon-color" style="padding-top: 20px; font-weight: 300; font-size: 40px">
 				What is Hack the Bay?
 			</h1>
 
 			<br></br>
 
-			<h3 class="container" style="font-weight: 300; font-size: 30px">
-				<strong class="accent-color-text" style="font-weight: 300"> Hack the Bay </strong> is the <strong class="accent-color-text" style="font-weight: 300"> Bay Area's </strong> annual hackathon run by students from <strong class="accent-color-text" style="font-weight: 300"> Abraham Lincoln High School. </strong>
+			<h3 class="container secondary-text" style="font-weight: 300; font-size: 30px">
+				<strong class="dark-primary-text" style="font-weight: 300"> Hack the Bay </strong> is the <strong class="dark-primary-text" style="font-weight: 300"> Bay Area's </strong> annual hackathon run by students from <strong class="dark-primary-text" style="font-weight: 300"> Abraham Lincoln High School. </strong>
 				<br></br>
 				We want to encourage students from all backgrounds to come together, collaborate, and bring to life
 				real world applications that create positive change. Our goal is to not only generate positive
@@ -81,7 +82,7 @@
 
 
 		<!-- Attend -->
-		<div id="attend" style="width: 100%; height: 100%">
+		<div id="attend" class="off-white content" style="width: 100%; height: 100%">
 			<h1 class="container" style="padding-top: 7%">
 				<b style="font-weight: 500; font-size: 40px">
 					ATTEND
@@ -90,17 +91,51 @@
 		</div>
 
 		<!-- Schedule -->
-		<div id="schedule" style="background-color: #FFC107; width: 100%; height: 100%">
-			<h1 class="container" style="padding-top: 20px">
+		<div id="schedule" class="primary content" style="width: 100%; height: 100%">
+			<h1 class="container" style="padding-top: 7%">
 				<b style="font-weight: 500; font-size: 40px">
 					SCHEDULE
 				</b>
 			</h1>
+
+			<!-- Schedule Item -->
+			<table class="highlight container secondary-text primary">
+        			<thead>
+          				<tr>
+			            	<th data-field="id">Time</th>
+			            	<th data-field="name">Event</th>
+			            	<th data-field="price">Location</th>
+          				</tr>
+        			</thead>
+
+        			<tbody>
+					<!-- Time Column -->
+          				<tr>
+            				<td>TBA</td>
+            				<td>TBA</td>
+            				<td>TBA</td>
+          				</tr>
+
+					<!-- Event Column -->
+          				<tr>
+            				<td>TBA</td>
+            				<td>TBA</td>
+            				<td>TBA</td>
+          				</tr>
+
+					<!-- Location Column -->
+          				<tr>
+            				<td>TBA</td>
+            				<td>TBA</td>
+            				<td>TBA</td>
+          				</tr>
+        			</tbody>
+      		</table>
 		</div>
 
 		<!--- Faq -->
-		<div id="faq" style="width: 100%; height: 100%">
-			<h1 class="container" style="padding-top: 20px">
+		<div id="faq" class="off-white content" style="width: 100%; height: 100%">
+			<h1 class="container" style="padding-top: 7%">
 				<b style="font-weight: 500; font-size: 40px">
 					FAQ
 				</b>
@@ -108,8 +143,8 @@
 		</div>
 
 		<!-- Sponsors -->
-		<div id="sponsors" style="background-color: #FFC107; width: 100%; height: 100%">
-			<h1 class="container" style="padding-top: 20px">
+		<div id="sponsors" class="primary content" style="width: 100%; height: 100%">
+			<h1 class="container" style="padding-top: 7%">
 				<b style="font-weight: 500; font-size: 40px">
 					SPONSORS
 				</b>
@@ -117,8 +152,8 @@
 		</div>
 
 		<!-- Partners -->
-		<div id="partners" style="width: 100%; height: 100%">
-			<h1 class="container" style="padding-top: 20px">
+		<div id="partners" class="off-white content" style="width: 100%; height: 100%">
+			<h1 class="container" style="padding-top: 7%">
 				<b style="font-weight: 500; font-size: 40px">
 					PARTNERS
 				</b>
@@ -126,8 +161,8 @@
 		</div>
 
 		<!-- Contact -->
-		<div id="contact" style="background-color: #FFC107; width: 100%; height: 100%">
-			<h1 class="container" style="padding-top: 20px">
+		<div id="contact" class="primary content" style="width: 100%; height: 100%">
+			<h1 class="container" style="padding-top: 7%">
 				<b style="font-weight: 500; font-size: 40px">
 					CONTACT
 				</b>

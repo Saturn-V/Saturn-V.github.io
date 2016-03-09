@@ -1,13 +1,21 @@
 .dark-primary {
-	background-color: #FFA000
+	background-color: #FBC02D
+}
+
+.dark-primary-text {
+	color: #FBC02D
 }
 
 .primary {
-	background-color: #FFC107
+	background-color: #FFE100
+}
+
+.primary-text {
+	color: #FFEB3B
 }
 
 .light-primary {
-	background-color: #FFECB3
+	background-color: #FFF9C4
 }
 
 .text-icon-color {
@@ -15,11 +23,11 @@
 }
 
 .accent-color {
-	background-color: #536DFE
+	background-color: #6495ED
 }
 
 .accent-color-text {
-	color: #536DFE
+	color: #6495ED
 }
 
 .secondary-text {
@@ -28,4 +36,13 @@
 
 .divider-color {
 	background-color: #B6B6B6
+}
+
+.off-white {
+	background-color: #f2f2f2
+}
+
+.content {
+	clear: both;
+	overflow: auto;
 }
