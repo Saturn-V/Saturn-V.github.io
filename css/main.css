@@ -50,6 +50,10 @@
 	background-color: #f9a825 !important;
 }
 
+.yellow-dark-text {
+	color: #f9a825;
+}
+
 .content-outer {
 	position: absolute;
 	clear: both;
@@ -58,6 +62,8 @@
 .content-inner {
 	position: relative;
 	clear: both;
+	padding-top: 30px;
+	padding-bottom: 175px;
 }
 
 .blur {
