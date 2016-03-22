@@ -66,6 +66,16 @@
 	padding-bottom: 175px;
 }
 
+.content-image {
+	position: relative;
+	width: 100%;
+}
+
+.content-img-text {
+	position: absolute;
+	width: 100%;
+}
+
 .content-footer {
 	position: relative;
 	clear: both;
