@@ -1,0 +1,15 @@
+nav {
+  height: 15%;
+  background-color: #263238;
+  min-height: 15%;
+}
+
+.profile-img {
+  border-radius: 475px;
+  overflow: visible;
+  width: 12.5%;
+  height: auto;
+  display: block;
+  margin: auto;
+  margin-top: 1.75%;
+}
