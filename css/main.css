@@ -1,7 +1,38 @@
+/*.navbar{
+  max-height: 15% !important;
+  background-color: #263238 !important;
+}*/
+
 nav {
-  height: 15%;
-  background-color: #263238;
-  min-height: 15%;
+  max-height: 22.5% !important;
+  height: auto !important;
+  background-color: #263238 !important;
+  display: block;
+  position: fixed;
+}
+
+.nav-items {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-right: 20px !important;
+  display: inline !important;
+}
+
+.name-link {
+  padding-top: 2.5% !important;
+  padding-bottom: 2.5% !important;
+  padding-left: 20px !important;
+  display: inline !important;
+}
+
+.name {
+  font-size: 45px !important;
+  font-weight: 200;
+}
+
+.item {
+  font-size: 25px;
+  font-weight: 200;
 }
 
 .profile-img {
