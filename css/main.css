@@ -1,32 +1,30 @@
-/*.navbar{
-  max-height: 15% !important;
-  background-color: #263238 !important;
-}*/
-
-nav {
-  max-height: 22.5% !important;
-  height: auto !important;
-  background-color: #263238 !important;
+.nav {
+  height: auto;
+  background-color: #263238;
   display: block;
   position: fixed;
 }
 
 .nav-items {
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   padding-right: 20px !important;
   display: inline !important;
+  position: relative;
 }
 
-.name-link {
-  padding-top: 2.5% !important;
-  padding-bottom: 2.5% !important;
+.nav-inner-item {
+  padding-right: 30px;
+}
+
+.profile-name{
+  padding-top: 1% !important;
+  padding-bottom: 1% !important;
   padding-left: 20px !important;
-  display: inline !important;
 }
 
-.name {
-  font-size: 45px !important;
+.name-style {
+  font-size: 40px;
   font-weight: 200;
 }
 
@@ -40,7 +38,8 @@ nav {
   overflow: visible;
   width: 12.5%;
   height: auto;
-  display: block;
+  display: inline-block;
   margin: auto;
   margin-top: 1.75%;
+  position: relative;
 }
