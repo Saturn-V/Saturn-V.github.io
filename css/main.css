@@ -1,23 +1,278 @@
-body {
-    font-family: Roboto;
+/* yellow: #f9a825 */
+/* blue: #0277BD */
+
+/*-----------------------------------*/
+/* SAN FRANCISCO FONT */
+/*-----------------------------------*/
+@font-face {
+    font-family: 'san-francisco';
+    src: url('../fonts/sf/SF-UI-Text-Regular.otf');
+    font-weight: normal;
 }
 
-nav {
-    background-color: #263238;
+@font-face {
+    font-family: 'san-francisco';
+    src: url('../fonts/sf/SF-UI-Text-Ultrathin.otf');
+    font-weight: 100;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'san-francisco' !important;
+    font-weight: 300;
+    color: #FAFAFA;
+    height: 100%;
     width: 100%;
-    height: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: #FAFAFA;
+}
+
+/* Grid System */
+.container {
+    width: 100%;
+}
+
+.col-1 {
+    position: relative;
+    float: left;
+    width: 8.33%;
+    /*margin: 1%;*/
+    background-color: black;
+}
+
+.col-2 {
+    position: relative;
+    float: left;
+    width: 16.66%;
+    /*margin: 1%;*/
+    background-color: black;
+}
+
+.col-3 {
+    position: relative;
+    float: left;
+    width: 25%;
+    /*margin: 1%;*/
+    background-color: black;
+}
+
+.col-4 {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    /*margin: 1%;*/
+    background-color: black;
+}
+
+.col-5 {
+    position: relative;
+    float: left;
+    width: 41.66%;
+    /*margin: 1%;*/
+    background-color: black;
+}
+
+.col-6 {
+    position: relative;
+    float: left;
+    width: 50%;
+    /*margin: 1%;*/
+    background-color: black;
+}
+
+.col-7 {
+    position: relative;
+    float: left;
+    width: 58.33%;
+    /*margin: 1%;*/
+    background-color: black;
+}
+
+.col-8 {
+    position: relative;
+    float: left;
+    width: 66.66%;
+    /*margin: 1%;*/
+    background-color: black;
+}
+
+.col-9 {
+    position: relative;
+    float: left;
+    width: 75%;
+    /*margin: 1%;*/
+    background-color: black;
+}
+
+.col-10 {
+    position: relative;
+    float: left;
+    width: 83.33%;
+    /*margin: 1%;*/
+    background-color: black;
+}
+
+.col-11 {
+    position: relative;
+    float: left;
+    width: 91.66%;
+    /*margin: 1%;*/
+    background-color: black;
+}
+
+.col-12 {
+    position: relative;
+    float: left;
+    width: 100%;
+    /*margin: 1%;*/
+    background-color: black;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+/*-----------------------------------*/
+/* NAVIGATION MENU */
+/*-----------------------------------*/
+.nav {
+    /*position: fixed;
+    top: 0;
+    left: 0;*/
+    height: 100vh;
+    /*margin: 1%;*/
+    /*background: linear-gradient(#FFC107, #4FC3F7);*/
+}
+
+.nav-header {
+    position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#ffd89b, #19547b);
+    color: black;
+    overflow: hidden;
 }
 
-/*.nav-bar {
+.name {
+    position: relative;
+    top: 8.33%;
+    margin-left: 50%;
+    margin-right: 50%;
+    border-width: 100px;
+    border-color: black;
+    /*transform: translate(0%, -50%);*/
+    /*margin: 0%;*/
+}
+
+.page-content {
+    height: 100vh;
+    overflow: scroll;
+    background-color: white;
+}
+
+.coming-soon {
+    font-size: 50pt;
+    position: fixed;
+    z-index: 100;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(0%, -50%);
+}
+
+.very-soon {
+    font-size: 50pt;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-about {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Remove alpha when coming soon is gone */
+}
+
+.content-projects {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Remove alpha when coming soon is gone */
+}
+
+
+
+
+
+.profile-img {
+  width: 15%;
   height: auto;
-  background-color: #263238;
-  display: block;
-  position: fixed;
+  border-radius: 475px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  top: 2%;
 }
 
+.profile-details {
+    width: 35%;
+}
+
+.profile-links {
+    top: 50%;
+    /*width: 35%;*/
+}
+/*-----------------------------------*/
+/* END */
+/*-----------------------------------*/
+
+
+
+/*-----------------------------------*/
+/* MIDDLE */
+/*-----------------------------------*/
+.content {
+
+}
+/*-----------------------------------*/
+/* END */
+/*-----------------------------------*/
+
+
+
+/*-----------------------------------*/
+/* BOTTOM */
+/*-----------------------------------*/
+footer {
+
+}
+/*-----------------------------------*/
+/* END */
+/*-----------------------------------*/
+
+
+
+
+
+/*
 .nav-item {
   padding-top: 25% !important;
   padding-bottom: 25% !important;
@@ -37,18 +292,4 @@ nav {
   position: relative;
   font-size: 35px;
   font-weight: 200;
-}
-
-.profile-img {
-  border-radius: 475px;
-  width: 12.5%;
-  height: auto;
-  /*margin-top: 1.75% !important;*/
-  overflow: visible;
-  position: relative;
-  display: block;
-  margin: auto;
-  margin-top: 1%;
-  left: 0;
-  right: 0;
 }*/
