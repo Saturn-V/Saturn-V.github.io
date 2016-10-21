@@ -192,6 +192,54 @@ a {
     /*margin: 0%;*/
 }
 
+/* MOBILE NAV */
+.sidenav {
+    visibility: hidden;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(255,255,255);
+    display: block;
+    transition: 0.3s
+
+}
+
+.sidenav a:hover{
+    color: yellow;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.openNavMobile {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    margin-left: 2.5%;
+}
+/* END */
+
 .page-content {
     height: 100vh;
     overflow: scroll;
@@ -283,6 +331,23 @@ footer {
 /* MOBILE STYLES */
 /*-----------------------------------*/
 
-@@media screen  {
+@media only screen  and (min-device-width: 320px) and (max-device-width: 480px) {
+    .sidenav {
+        padding-top: 15px;
+        visibility: visible;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+    .openNavMobile {
+        display: block;
+    }
+    .nav {
+        /*visibility: hidden;*/
+        display: none;
+    }
 
+    .page-content {
+        width: 100%;
+    }
 }

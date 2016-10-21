@@ -1,8 +1,8 @@
-var content = $(".page-content");
-var nav = $(".nav-content");
+function openNav() {
+    console.log("I read you houston");
+    document.getElementById("mySidenav").style.width = "100%";
+}
 
-nav.scroll(function() {
-    content.scrollTop(nav.scrollTop());
-});
-
-console.log("test");
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
