@@ -194,11 +194,10 @@ a {
 
 /* MOBILE NAV */
 .sidenav {
-    visibility: hidden;
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     background: linear-gradient(rgba(255, 216, 155, 0.99), rgba(25, 84, 123, 0.9));
@@ -211,7 +210,7 @@ a {
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 45px !important;
+    font-size: 45px;
     color: rgb(0,0,0);
     display: block;
     transition: 0.3s
@@ -219,7 +218,7 @@ a {
 }
 
 .sidenav a:hover{
-    color: yellow;
+    color: #f1f1f1;
 }
 
 .sidenav .closebtn {
@@ -229,15 +228,17 @@ a {
     font-size: 36px;
     margin-left: 50px;
 }
+
 .openNavMobile {
     display: none;
-    font-size: 30px;
-    cursor: pointer;
     color: black;
-    margin-top: 1%;
-    margin-bottom: 0%;
-    margin-left: 2.5%;
+    z-index: 1;
+    font-size:30px;
+    cursor:pointer;
+    position: fixed;
+    left: 2.5%;
 }
+
 /* END */
 
 .page-content {
@@ -276,53 +277,6 @@ a {
     transform: translate(-50%, -50%);
     color: black;
 }
-
-
-
-
-
-.profile-img {
-  width: 15%;
-  height: auto;
-  border-radius: 475px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  top: 2%;
-}
-
-.profile-details {
-    width: 35%;
-}
-
-.profile-links {
-    top: 50%;
-    /*width: 35%;*/
-}
-/*-----------------------------------*/
-/* END */
-/*-----------------------------------*/
-
-
-
-/*-----------------------------------*/
-/* MIDDLE */
-/*-----------------------------------*/
-.content {
-
-}
-/*-----------------------------------*/
-/* END */
-/*-----------------------------------*/
-
-
-
-/*-----------------------------------*/
-/* BOTTOM */
-/*-----------------------------------*/
-footer {
-
-}
 /*-----------------------------------*/
 /* END */
 /*-----------------------------------*/
@@ -334,14 +288,16 @@ footer {
 @media only screen  and (min-device-width: 320px) and (max-device-width: 480px) {
     .sidenav {
         padding-top: 15px;
-        visibility: visible;
     }
+
     .sidenav a {
         font-size: 18px;
     }
+
     .openNavMobile {
         display: block;
     }
+
     .nav {
         /*visibility: hidden;*/
         display: none;
