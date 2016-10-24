@@ -213,7 +213,7 @@ a {
     font-size: 45px;
     color: rgb(0,0,0);
     display: block;
-    transition: 0.3s
+    transition: 0.444ms
 
 }
 
@@ -239,6 +239,10 @@ a {
     left: 2.5%;
 }
 
+.nav-items {
+    margin-top: 30%;
+}
+
 /* END */
 
 .page-content {
@@ -247,19 +251,19 @@ a {
 }
 
 .coming-soon {
-    position: fixed;
+    position: absolute;
     font-size: 50pt;
-    bottom: 50%;
-    right: 20%;
-    /*transform: translate(-50%, -50%);*/
-    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: white;
 }
 
 .content-about {
     position: relative;
     height: 100%;
     width: 100%;
-    /*background-color: rgba(0, 0, 0, 0.9);  Remove alpha when coming soon is gone */
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .content-projects {
@@ -274,7 +278,7 @@ a {
     font-size: 50pt;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -100%);
     color: black;
 }
 /*-----------------------------------*/
@@ -291,7 +295,7 @@ a {
     }
 
     .sidenav a {
-        font-size: 18px;
+        font-size: 50px;
     }
 
     .openNavMobile {
