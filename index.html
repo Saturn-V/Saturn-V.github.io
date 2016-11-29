@@ -15,6 +15,9 @@
             <!-- Import Jquery -->
             <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
+            <!-- Import Handlebars -->
+            <script src="js/handlebars-v4.0.5.js"></script>
+
             <!-- Import index -->
             <script src="js/index.js"></script>
 
@@ -24,7 +27,8 @@
 
       <body>
 
-          <!-- Mobile Navigation Menu -->
+          <!-- Mobile Navigation Menu
+          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
           <div id="mySidenav" class="sidenav">
               <div class="nav-items-mobile">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -35,39 +39,57 @@
               </div>
           </div>
 
-          <!-- Mobile Navigation menu Button -->
+          <!-- Mobile Navigation menu Button
+          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
           <span class="openNavMobile" onclick="openNav()">&#9776;</span>
 
-          <!-- Website Content -->
-          <div class="container">
-
-              <!-- Desktop Navigation Menu -->
-              <div class="col-3 nav">
-                  <p class="name">Alex Pena</p>
-                  <div class="nav-items">
-                      <a href="#about">About Me</a>
-                      <a href="#product">Products</a>
-                      <a>Projects</a>
-                  </div>
+          <!-- Website Content
+          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          <div>
+            <!-- Desktop Navigation Menu
+            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <div class="two columns nav">
+              <p class="name">Alex Peña</p>
+              <div class="nav-items">
+                <a href="#about">About Me</a>
+                <a href="#products">Products</a>
+                <a href="#projects">Projects</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
               </div>
+            </div>
 
-              <div class="col-9 page-content">
+              <div class="ten columns offset-by-two columns page-content">
 
-                  <div id="about" class="content-about">
-                      <p class="coming-soon">COMING SOON</p>
+                  <div id="about" class="content-about content-padding">
+
+                      <h1 class="title-border">ABOUT ME</h1>
+
                   </div>
 
-                  <div id="projects" class="content-projects">
-                      <p class="very-soon">VERY SOON . . . </p>
+                  <div id="products" class="content-products content-padding">
+
+                    <h1 class="title-border">PRODUCTS</h1>
+
                   </div>
 
-                  <!-- <div class="content-products">
-                      <p class="very-soon">VERY SOON . . . </p>
+                  <div id="projects" class="content-projects content-padding">
+
+                    <h1 class="title-border">PROJECTS</h1>
+
                   </div>
 
-                  <div class="content-contact">
-                      <p class="very-soon">VERY SOON . . . </p>
-                  </div> -->
+                  <div id="blog" class="content-projects content-padding">
+
+                    <h1 class="title-border">BLOG</h1>
+
+                  </div>
+
+                  <div id="contact" class="content-projects content-padding">
+
+                    <h1 class="title-border">CONTACT</h1>
+
+                  </div>
               </div>
 
           </div>
