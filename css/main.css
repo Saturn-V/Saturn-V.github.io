@@ -1,11 +1,17 @@
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
+- Legend
 - Typography
 - Base Styles
 - Grid
 - Clearing
 - Navigation Menu
 */
+
+/* Legend
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Primary Text: #004056 */
+
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -38,6 +44,7 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    overflow: auto;
 }
 
 body {
@@ -149,6 +156,20 @@ a {
   display: table;
   clear: both; }
 
+/* Carousel
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.carousel {
+    overflow: auto;
+    white-space:nowrap;
+}
+
+.carousel > * {
+  background-color: rgba(255, 253, 245, .75);
+  min-height: 50px;
+  display:inline-block;
+  float: none;
+}
+
 /* Navigation Menu
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Desktop Navigation */
@@ -259,13 +280,21 @@ a {
     }
 }
 
-/* Content Styles
+/* General Content Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .title-border {
-  display: inline;
+  display: block;
   border-top: solid 5px #FFFFCB;
   color: #FFFFCB;
+}
+
+.box {
+  background-color: rgba(44, 133, 141, .75);
+  border-radius: 6px 6px 6px 6px;
+  margin-right: 5%;
+  padding: 4%;
+  box-sizing: border-box;
 }
 
 .content-padding {
@@ -274,23 +303,47 @@ a {
 }
 
 .page-content {
-    height: 100vh;
+  height: 100vh;
 }
 
+/* About Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .content-about {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    /*background-color: rgba(200, 200, 200, .9);*/
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /*background-color: rgba(200, 200, 200, .9);*/
 }
 
+/* Product Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .content-products {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    /*background-color: rgb(100, 100, 100);*/
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /*background-color: rgb(100, 100, 100);*/
 }
 
+.product {
+  background-color: rgba(255, 253, 245, .75);
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding: .5%;
+}
+
+.product > img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.product > p {
+  hyphens: auto;
+  word-wrap: break-word;
+}
+
+/* Project Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .content-projects {
     position: relative;
     height: 100%;
