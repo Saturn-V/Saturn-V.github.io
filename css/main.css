@@ -151,6 +151,7 @@ a {
 
 /* Navigation Menu
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Desktop Navigation */
 .nav {
   position: fixed;
   z-index: 10;
@@ -188,35 +189,44 @@ a {
 }
 
 /* MOBILE NAV PLACE INTO A MEDIA QUERY SO THIS ONLY SHOWS UP WHEN ON MOBILE*/
-.sidenav {
+.nav-mobile-button {
+  display: none;
+  color: black;
+  z-index: 1;
+  font-size:30px;
+  cursor:pointer;
+  position: fixed;
+  right: 10%;
+}
+
+.nav-mobile {
   height: 100%;
   width: 0;
   position: fixed;
   z-index: 2;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(255, 216, 155, 0.9), rgba(25, 84, 123, 0.9));
+  /*background: linear-gradient(rgba(255, 216, 155, 0.9), rgba(25, 84, 123, 0.9));*/
+  background-color: rgba(255, 253, 245, .75);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
   text-align:center;
 }
 
-.sidenav a {
+.nav-mobile a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 45px;
-    /*color: black;*/
     display: block;
     transition: 0.444ms
-
 }
 
-.sidenav a:hover{
+.nav-mobile a:hover{
     color: #f1f1f1;
 }
 
-.sidenav .closebtn {
+.nav-mobile .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -224,18 +234,29 @@ a {
     margin-left: 50px;
 }
 
-.openNavMobile {
-    display: none;
-    color: black;
-    z-index: 1;
-    font-size:30px;
-    cursor:pointer;
-    position: fixed;
-    left: 2.5%;
-}
 
 .nav-items-mobile {
     margin-top: 30%;
+}
+
+@media only screen  and (min-device-width: 320px) and (max-device-width: 480px) {
+    .nav-mobile { padding-top: 15px; }
+
+    .nav-mobile a { font-size: 50px; }
+
+    .nav-mobile-button { display: block; }
+
+    .nav { display: none; }
+
+    .page-content {
+        width: 100%;
+        left: 0;
+    }
+
+    .project-card {
+        width: calc(100% - 5%);
+        height: calc(50% - 5%)
+    }
 }
 
 /* Content Styles
@@ -299,36 +320,4 @@ a {
 
 .project-card:hover {
     background-color: black;
-}
-
-/* Mobile Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-@media only screen  and (min-device-width: 320px) and (max-device-width: 480px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 50px;
-    }
-
-    .openNavMobile {
-        display: block;
-    }
-
-    .nav {
-        /*visibility: hidden;*/
-        display: none;
-    }
-
-    .page-content {
-        width: 100%;
-        left: 0;
-    }
-
-    .project-card {
-        width: calc(100% - 5%);
-        height: calc(50% - 5%)
-    }
 }
