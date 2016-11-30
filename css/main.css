@@ -44,7 +44,6 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    overflow: auto;
 }
 
 body {
@@ -202,11 +201,18 @@ a {
   transform: translate(-50%, -50%);
 }
 
+
 .nav > .nav-items a {
+  box-sizing: border-box;
   display: block;
   float: left;
   padding: 10% 5%;
   font-size: 25px;
+  transition: 0.1s;
+}
+
+.nav > .nav-items a:hover {
+  border-left: solid 5px #004056;
 }
 
 /* MOBILE NAV PLACE INTO A MEDIA QUERY SO THIS ONLY SHOWS UP WHEN ON MOBILE*/
@@ -282,18 +288,25 @@ a {
 
 /* General Content Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /*background-color: rgba(0, 0, 0, 0.9);  Remove alpha when coming soon is gone */
+}
 
 .title-border {
   display: block;
-  border-top: solid 5px #FFFFCB;
+  border-top: solid 4px #FFFFCB;
   color: #FFFFCB;
+  font-weight: 200;
 }
 
 .box {
-  background-color: rgba(44, 133, 141, .75);
+  background-color: rgba(255, 253, 245, .75);
   border-radius: 6px 6px 6px 6px;
-  margin-right: 5%;
-  padding: 4%;
+  /*margin-right: 5%;*/
+  padding: 2%;
   box-sizing: border-box;
 }
 
@@ -308,22 +321,9 @@ a {
 
 /* About Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.content-about {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  /*background-color: rgba(200, 200, 200, .9);*/
-}
 
 /* Product Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.content-products {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  /*background-color: rgb(100, 100, 100);*/
-}
-
 .product {
   background-color: rgba(255, 253, 245, .75);
   border-radius: 6px;
@@ -344,13 +344,6 @@ a {
 
 /* Project Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.content-projects {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    /*background-color: rgba(0, 0, 0, 0.9);  Remove alpha when coming soon is gone */
-}
-
 .project-card-container {
     position: absolute;
     height: 100%;
@@ -373,4 +366,31 @@ a {
 
 .project-card:hover {
     background-color: black;
+}
+
+/* Blog Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#blog .row {
+  padding: 0 4% 0 0;
+}
+
+#blog ul {
+  list-style: none;
+  padding: 0;
+}
+
+#blog ul h3#date {
+  letter-spacing: 1px;
+}
+
+#blog ul h3 {
+  display: inline-block;
+}
+
+#blog ul > li > h3:first-child {
+  margin-right: 4%;
+}
+
+#blog h1 {
+  font-weight: 200;
 }
