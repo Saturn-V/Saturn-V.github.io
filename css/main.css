@@ -3,9 +3,15 @@
 - Legend
 - Typography
 - Base Styles
+- General Styles
 - Grid
 - Clearing
+- Carousel
 - Navigation Menu
+- About Styles
+- Product Styles
+- Project Styles
+- Blog Styles
 */
 
 /* Legend
@@ -34,9 +40,28 @@
     font-weight: 200;
 }
 
+@font-face {
+    font-family: 'san-francisco';
+    src: url('../fonts/sf/SF-UI-Text-Regular.otf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'san-francisco';
+    src: url('../fonts/sf/SF-UI-Text-Medium.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'san-francisco';
+    src: url('../fonts/sf/SF-UI-Text-heavy.otf');
+    font-weight: 500;
+}
+
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 html, body {
+  font-size: 20;
     margin: 0;
     padding: 0;
     background-image: url('../assets/bg.jpg');
@@ -58,6 +83,61 @@ body {
 a {
     text-decoration: none;
     color: #004056;
+}
+
+h1 { font-weight: 200; }
+
+i.fa {
+  font-size: 2.5rem;
+}
+
+.contact.link {
+  padding-left: 2.5rem;
+}
+
+/* General Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /*background-color: rgba(0, 0, 0, 0.9);  Remove alpha when coming soon is gone */
+}
+
+.card {
+  background-color: rgba(255, 253, 245, .75);
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
+  margin-right: 5rem;
+  line-height: 1.5;
+  letter-spacing: .01rem;
+  font-size: 1.5rem;
+}
+
+.title-border {
+  display: block;
+  border-top: solid 4px #FFFFCB;
+  color: #FFFFCB;
+  font-weight: 200;
+}
+
+.box {
+  background-color: rgba(255, 253, 245, .75);
+  border-radius: 6px 6px 6px 6px;
+  /*margin-right: 5%;*/
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.content-padding {
+  box-sizing: border-box;
+  padding: 5% 0 0 5%;
+}
+
+#mainContent {
+  height: 100vh;
 }
 
 /* Grid
@@ -153,7 +233,8 @@ a {
 .u-cf {
   content: "";
   display: table;
-  clear: both; }
+  clear: both;
+}
 
 /* Carousel
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -187,8 +268,8 @@ a {
   top: 5%;
   left: 50%;
   transform: translate(-50%, 0%);
-  font-size: 45px;
-  font-weight: 200;
+  font-size: 2.5em;
+  font-weight: 400;
   /*color: #44696C;*/
 }
 
@@ -203,16 +284,17 @@ a {
 
 
 .nav > .nav-items a {
-  box-sizing: border-box;
+  font-weight: 200;
+  /*box-sizing: border-box;*/
   display: block;
   float: left;
   padding: 10% 5%;
-  font-size: 25px;
+  font-size: 1.5em;
   transition: 0.1s;
 }
 
 .nav > .nav-items a:hover {
-  border-left: solid 5px #004056;
+  border-left: solid 4px #004056;
 }
 
 /* MOBILE NAV PLACE INTO A MEDIA QUERY SO THIS ONLY SHOWS UP WHEN ON MOBILE*/
@@ -286,39 +368,6 @@ a {
     }
 }
 
-/* General Content Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.section {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    /*background-color: rgba(0, 0, 0, 0.9);  Remove alpha when coming soon is gone */
-}
-
-.title-border {
-  display: block;
-  border-top: solid 4px #FFFFCB;
-  color: #FFFFCB;
-  font-weight: 200;
-}
-
-.box {
-  background-color: rgba(255, 253, 245, .75);
-  border-radius: 6px 6px 6px 6px;
-  /*margin-right: 5%;*/
-  padding: 2%;
-  box-sizing: border-box;
-}
-
-.content-padding {
-  box-sizing: border-box;
-  padding: 5% 0 0 5%;
-}
-
-.page-content {
-  height: 100vh;
-}
-
 /* About Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -385,12 +434,9 @@ a {
 
 #blog ul h3 {
   display: inline-block;
+  font-weight: 300;
 }
 
 #blog ul > li > h3:first-child {
-  margin-right: 4%;
-}
-
-#blog h1 {
-  font-weight: 200;
+  /*margin-right: 4%;*/
 }
