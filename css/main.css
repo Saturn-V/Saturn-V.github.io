@@ -95,6 +95,15 @@ i.fa {
   padding-left: 2.5rem;
 }
 
+.shadow:hover {
+  transition: 0.25s;
+  box-shadow: 1.125px 1.125px 10px #000;
+}
+
+.paragraph {
+  font-weight: 300;
+}
+
 /* General Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
@@ -105,6 +114,7 @@ i.fa {
 }
 
 .card {
+  transition: 0.25s;
   background-color: rgba(255, 253, 245, .75);
   border-radius: 6px;
   box-sizing: border-box;
@@ -116,11 +126,18 @@ i.fa {
   font-size: 1.5rem;
 }
 
-.title-border {
+.card.shadow:hover {
+  background-color: rgba(255, 253, 245, 1);
+}
+
+.title {
   display: block;
-  border-top: solid 4px #FFFFCB;
   color: #FFFFCB;
   font-weight: 200;
+}
+
+.border {
+  border-top: solid 4px #FFFFCB;
 }
 
 .box {
@@ -294,7 +311,9 @@ i.fa {
 }
 
 .nav > .nav-items a:hover {
-  border-left: solid 4px #004056;
+  /*border-left: solid 4px #004056; For fancy side bar */
+  color: #FFFFCB;
+  transition: 0.1s;
 }
 
 /* MOBILE NAV PLACE INTO A MEDIA QUERY SO THIS ONLY SHOWS UP WHEN ON MOBILE*/
