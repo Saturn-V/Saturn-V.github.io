@@ -64,7 +64,7 @@ html, body {
   font-size: 20;
     margin: 0;
     padding: 0;
-    background-image: url('../assets/bg.jpg');
+    background-image: url('../assets/bg-new.jpg');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -113,13 +113,15 @@ i.fa {
 .section {
     position: relative;
     height: 100%;
+    /*max-height: 100vh;*/
     width: 100%;
+    padding: 5% 0 0 5%;
     /*background-color: rgba(0, 0, 0, 0.9);  Remove alpha when coming soon is gone */
 }
 
 .card {
   transition: 0.25s;
-  background-color: rgba(255, 253, 245, .75);
+  background-color: rgba(255, 255, 255, .75);
   border-radius: 6px;
   box-sizing: border-box;
   padding: 1.5rem;
@@ -131,21 +133,16 @@ i.fa {
 }
 
 .card.shadow:hover {
-  background-color: rgba(255, 253, 245, 1);
-}
-
-.title {
-  display: block;
-  color: #FFFFCB;
-  font-weight: 200;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .border {
-  border-top: solid 4px #FFFFCB;
+  /*border-top: solid 4px #FFFFCB;*/
+  border-top: solid 4px #943C38;
 }
 
 .card-simple {
-  background-color: rgba(255, 253, 245, .75);
+  background-color: rgba(255, 255, 255, .75);
   border-radius: 6px;
   box-sizing: border-box;
   padding: 1.5rem;
@@ -154,11 +151,50 @@ i.fa {
 
 .content-padding {
   box-sizing: border-box;
-  padding: 5% 0 0 5%;
+  padding-right: 4%;
 }
 
 #mainContent {
   height: 100vh;
+}
+
+/*.title {
+  color: #FFFFCB;
+}*/
+.title {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: 400;
+}
+/* Importance */
+.title.minor     { color: grey }
+/* Styles */
+.title.bold      { font-weight: 500 }
+/* Sizes */
+.title.large     { font-size: 8rem }
+.title.medium    { font-size: 4rem }
+.title.med-sml   { font-size: 3rem }
+.title.small     { font-size: 2rem }
+.title.x-sml     { font-size: 1.5rem }
+.title > i       { font-size: 2rem }
+
+.splash          { font-weight: 200 }
+.splash.red      { color: #943C38 }
+
+.text            { font-weight: 200 }
+/* Importance */
+.text.minor      { color: grey }
+/* Sizes */
+.text.large      { font-size: 4rem }
+.text.lg-med     { font-size: 3rem }
+.text.medium     { font-size: 2rem }
+.text.med-sml    { font-size: 1.5rem }
+.text.small      { font-size: 1rem }
+
+.context .text {
+  margin-top: 1rem;
+  line-height: 2rem;
 }
 
 /* Grid
@@ -195,6 +231,7 @@ i.fa {
   .columns:first-child { margin-left: 0; }
 }
 
+/* Columns with gutters between each other */
 .one.column,
 .one.columns                    { width: 4.66666666667%; }
 .two.columns                    { width: 13.3333333333%; }
@@ -257,6 +294,19 @@ i.fa {
   clear: both;
 }
 
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+.u-pull-right {
+  float: right; }
+.u-pull-left {
+  float: left; }
+
 /* Carousel
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .carousel {
@@ -278,7 +328,7 @@ i.fa {
   position: fixed;
   z-index: 10;
   height: 100vh;
-  background-color: rgba(255, 253, 245, .75);
+  background-color: rgba(255, 255, 255, .75);
   border-radius: 0 6px 6px 0;
   /*color: #44696C;*/
   /*background: linear-gradient(rgba(255, 216, 155, .5), rgba(25, 84, 123, .5));*/
@@ -316,7 +366,7 @@ i.fa {
 
 .nav > .nav-items a:hover {
   /*border-left: solid 4px #004056; For fancy side bar */
-  color: #FFFFCB;
+  color: #943C38;
   transition: 0.1s;
 }
 
@@ -403,7 +453,14 @@ i.fa {
   padding: .5%;
 }
 
-.product > img {
+.products > * { margin-top: 1rem }
+
+/*.product > img {
+  width: 25%;
+  height: auto;
+  border-radius: 6px;
+}*/
+.icon, img {
   width: 100%;
   height: auto;
   border-radius: 6px;
