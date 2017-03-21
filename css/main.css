@@ -193,9 +193,11 @@ i.fa {
 .text.small      { font-size: 1rem }
 
 .context .text {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   line-height: 2rem;
 }
+
+.margin-standard { margin-top: 1rem }
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
