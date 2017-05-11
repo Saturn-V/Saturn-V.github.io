@@ -19,6 +19,7 @@
 /* Primary Text: #004056 */
 
 
+
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* San Francisco Font*/
@@ -64,11 +65,12 @@ html, body {
   font-size: 20;
     margin: 0;
     padding: 0;
-    background-image: url('../assets/bg-new.jpg');
+    /*background-image: url('../assets/bg-new.jpg');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
+    background-color: #F6F9FC;
 }
 
 body {
@@ -97,43 +99,94 @@ i.fa {
 
 .shadow:hover {
   transition: 0.25s;
-  box-shadow: 1.125px 1.125px 10px #000;
+  /*box-shadow: 1.125px 1.125px 10px #000;*/
 }
 
-.paragraph {
-  font-weight: 300;
+.content {
+  font-weight: 200;
+  font-size: 1.5rem;
+  border-top: 1px solid #e6ebf1;
+  padding: 1.5rem;
 }
 
 .margin-standard {
   margin-right: calc(5rem - 4%);
 }
 
+.cover-photo {
+  background-image: url('../assets/alex.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  /*min-height: 25vh;*/
+  /*width: 25vh;*/
+}
+
+.circle {
+  width: 10rem;
+  height: 10rem;
+  transition: 0.25s;
+  background-color: rgba(255, 255, 255, .75);
+  border-radius: 5rem;
+  box-sizing: border-box;
+  margin-top: 3rem;
+  margin-right: 6.25rem;
+  line-height: 1.5;
+  letter-spacing: .01rem;
+  font-size: 1.5rem;
+  box-shadow: 0 7px 14px 0 rgba(50,50,93,.1), 0 3px 6px 0 rgba(0,0,0,.07);
+}
+
+.circle:last-child {
+  margin-right: 0;
+}
+
+.circle > img {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+}
+
+.activities > .circle{
+  display: inline-block;
+}
+
 /* General Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
     position: relative;
-    height: 100%;
-    /*max-height: 100vh;*/
+    /*height: 100vh;*/
     width: 100%;
     padding: 5% 0 0 5%;
-    /*background-color: rgba(0, 0, 0, 0.9);  Remove alpha when coming soon is gone */
+    box-sizing: border-box;
+    padding-right: 4%;
+    margin-bottom: 8rem;
+    /* background-color: rgba(0, 0, 0, 0.9);  Remove alpha when coming soon is gone */
 }
 
 .card {
+  width: 100%;
+  height: auto;
   transition: 0.25s;
   background-color: rgba(255, 255, 255, .75);
   border-radius: 6px;
   box-sizing: border-box;
-  padding: 1.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   margin-right: 5rem;
   line-height: 1.5;
   letter-spacing: .01rem;
   font-size: 1.5rem;
+  box-shadow: 0 7px 14px 0 rgba(50,50,93,.1), 0 3px 6px 0 rgba(0,0,0,.07);
+}
+
+.card.contact {
+  padding: 1rem;
 }
 
 .card.shadow:hover {
   background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
 }
 
 .border {
@@ -147,12 +200,15 @@ i.fa {
   box-sizing: border-box;
   padding: 1.5rem;
   /*margin-right: 5%;*/
+  transition: 0.25s;
+  box-shadow: 0 7px 14px 0 rgba(50,50,93,.1), 0 3px 6px 0 rgba(0,0,0,.07);
 }
 
-.content-padding {
-  box-sizing: border-box;
-  padding-right: 4%;
-}
+/*margin-bottom: 0.5rem;
+margin-right: 5rem;
+line-height: 1.5;
+letter-spacing: .01rem;
+font-size: 1.5rem;*/
 
 #mainContent {
   height: 100vh;
@@ -167,6 +223,13 @@ i.fa {
   margin: 0;
   font-weight: 400;
 }
+
+.header {
+  border-radius: inherit;
+  background-color: rgb(255, 255, 255);
+  padding: 1.5rem;
+}
+
 /* Importance */
 .title.minor     { color: grey }
 /* Styles */
@@ -193,8 +256,14 @@ i.fa {
 .text.small      { font-size: 1rem }
 
 .context .text {
-  margin-top: 0.5rem;
   line-height: 2rem;
+}
+
+.details {
+  box-sizing: border-box;
+  /*padding: 1% 2.5% 0.5% 0%;*/
+  margin-top: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .margin-standard { margin-top: 1rem }
@@ -317,7 +386,7 @@ i.fa {
 }
 
 .carousel > * {
-  background-color: rgba(255, 253, 245, .75);
+  /*background-color: rgba(255, 253, 245, .75);*/
   min-height: 50px;
   display:inline-block;
   float: none;
@@ -330,8 +399,9 @@ i.fa {
   position: fixed;
   z-index: 10;
   height: 100vh;
-  background-color: rgba(255, 255, 255, .75);
+  background-color: rgb(255, 255, 255);
   border-radius: 0 6px 6px 0;
+  box-shadow: 0 7px 14px 0 rgba(50,50,93,.1), 0 3px 6px 0 rgba(0,0,0,.07);
   /*color: #44696C;*/
   /*background: linear-gradient(rgba(255, 216, 155, .5), rgba(25, 84, 123, .5));*/
 }
@@ -384,7 +454,7 @@ i.fa {
 }
 
 .nav-mobile {
-  height: 100%;
+  height: 100vh;
   width: 0;
   position: fixed;
   z-index: 2;
@@ -448,20 +518,25 @@ i.fa {
 
 /* Product Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.product {
-  background-color: rgba(255, 253, 245, .75);
+.product, .project {
+  background-color: rgb(255, 255, 255);
   border-radius: 6px;
   box-sizing: border-box;
-  padding: .5%;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+  transition-property: color, background-color, box-shadow, transform;
+  transition-duration: .15s;
 }
+
+.product:hover {
+  box-shadow: 0 18px 35px rgba(50, 50, 93, .1), 0 8px 15px rgba(0, 0, 0, .07);
+  transform: translateY(-2px);
+}
+
 
 .products > * { margin-top: 1rem }
 
-/*.product > img {
-  width: 25%;
-  height: auto;
-  border-radius: 6px;
-}*/
+.products > *:first-child { margin-top: 0rem }
+
 .icon, img {
   width: 100%;
   height: auto;

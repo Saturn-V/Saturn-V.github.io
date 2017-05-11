@@ -1,258 +1,363 @@
 <!DOCTYPE html>
 <html>
-      <head>
-            <title>Mrcodecollector.GitHub.io by MrCodeCollector</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 
-            <!--Import Google Icon Font-->
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0"/>
 
-            <!--Import main.css-->
-            <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+    <title>Alex Aaron Peña</title>
 
-            <!--Import font-awesome-->
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-            <!-- Import Jquery -->
-            <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!--Import main.css-->
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
 
-            <!-- Import Handlebars -->
-            <script src="js/handlebars-v4.0.5.js"></script>
+    <!--Import font-awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-            <!-- Import index -->
-            <script src="js/index.js"></script>
+    <!-- Import Jquery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
-            <!--Let browser know website is optimized for mobile-->
-            <meta name="viewport"  content="width=device-width, initial-scale=1.0"/>
-      </head>
+    <!-- Import Handlebars -->
+    <script src="js/handlebars-v4.0.5.js"></script>
 
-      <body>
+    <!-- Import index -->
+    <script src="js/index.js"></script>
+  </head>
 
-          <!-- Mobile Navigation Menu
-          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-          <div id="mySidenav" class="nav-mobile">
-              <div class="nav-items-mobile">
-                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                  <a href="#about" onclick="closeNav()">About</a>
-                  <a href="#products" onclick="closeNav()">Products</a>
-                  <a href="#projects" onclick="closeNav()">Projects</a>
-                  <a href="#blog" onclick="closeNav()">Blog</a>
-                  <a href="#contact" onclick="closeNav()">Contact</a>
+  <body>
+
+      <!-- Mobile Navigation Menu
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div id="mySidenav" class="nav-mobile">
+          <div class="nav-items-mobile">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="#about" onclick="closeNav()">About</a>
+              <a href="#products" onclick="closeNav()">Products</a>
+              <a href="#projects" onclick="closeNav()">Projects</a>
+              <a href="#blog" onclick="closeNav()">Blog</a>
+              <a href="#contact" onclick="closeNav()">Contact</a>
+          </div>
+      </div>
+
+      <!-- Mobile Navigation menu Button
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <span class="nav-mobile-button" onclick="openNav()">&#9776;</span>
+
+      <!-- Website Content
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="row">
+
+        <!-- Desktop Navigation Menu
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="two columns nav">
+          <p class="name">Alex Peña</p>
+          <div class="nav-items">
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#projects">Projects</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <!-- Main Content
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div id="mainContent"class="ten columns offset-by-two columns">
+
+          <div id="about" class="section">
+
+
+
+            <div class="card">
+              <div class="header">
+                <h1 class="title splash">ABOUT</h1>
               </div>
+              <div class="content">
+                I'm the guy to the right of the photo...and self taught programmer. I seek to generate change in the
+                world around me. Towards the end of High School, I realized
+                that I was passionate about Software Engineering and Education.
+                It was then that I started the first Computer Science club at my
+                school. Upon graduating, I was offered a position to teach AP Computer
+                Science through TEALS, a Microsoft Philanthropy. Helping other people
+                through what I create has always been something I have cared about.
+                <!-- I want to change the way people think about education, and bring
+                ideas that people can benefit from, to life. -->
+                <!-- Currently, I am working on a product with a fellow student at the Product College here at Make School, that
+                alters the way we give and receive feedback in the classroom.
+                By creating a semi-autonomous feedback platform on the web and iOS, my
+                partner and I plan to push instructors and students alike to reach their
+                maximum potential. -->
+              </div>
+            </div>
+
+            <div class="activities">
+              <div class="circle">
+                <img src="assets/alex.jpg" alt="">
+              </div>
+
+              <div class="circle">
+                <img src="assets/activity-running.png" alt="">
+              </div>
+
+              <div class="circle">
+                <img src="assets/activity-basketball.png" alt="">
+              </div>
+
+              <div class="circle">
+                <img src="assets/activity-cycling.png" alt="">
+              </div>
+            </div>
+
           </div>
 
-          <!-- Mobile Navigation menu Button
-          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-          <span class="nav-mobile-button" onclick="openNav()">&#9776;</span>
+          <div id="products" class="section">
 
-          <!-- Website Content
-          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-          <div class="row">
-
-            <!-- Desktop Navigation Menu
-            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-            <div class="two columns nav">
-              <p class="name">Alex Peña</p>
-              <div class="nav-items">
-                <a href="#about">About</a>
-                <a href="#products">Products</a>
-                <a href="#projects">Projects</a>
-                <a href="#blog">Blog</a>
-                <a href="#contact">Contact</a>
+            <div class="card">
+              <div class="header">
+                <h1 class="title splash">PRODUCTS</h1>
               </div>
             </div>
 
-            <!-- Main Content
-            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-            <div id="mainContent"class="ten columns offset-by-two columns">
+            <div class="row products">
 
-              <div id="about" class="section content-padding">
-
-                <h1 class="title splash red border">ABOUT</h1>
-
-                <div class="card paragraph margin-standard">
-                  I'm a self taught programmer, seeking to generate change in the
-                  world around me. Towards the end of High School, I realized
-                  that I was passionate about Software Engineering and Education.
-                  It was then that I started the first Computer Science club at my
-                  school. Upon graduating, I was offered a position to teach AP Computer
-                  Science through TEALS, a Microsoft Philanthropy. Helping other people
-                  through what I create has always been something I have cared about.
-                  I want to change the way people think about education, and bring
-                  ideas that people can benefit from, to life. Currently, I am working on
-                  a product with a fellow student at the Make School: Product University, that
-                  alters the way we give and receive feedback in the classroom.
-                  By creating a semi-autonomous feedback platform on the web and iOS, my
-                  partner and I plan to push instructors and students alike to reach their
-                  maximum potential.
+              <a href="https://www.auxmusic.io" target="_blank" class="twelve columns product row">
+                <div class="four columns icon">
+                  <img src="assets/contendify.png" alt=""/>
                 </div>
-
-              </div>
-
-            <div id="products" class="section content-padding">
-
-              <h1 class="title splash red border">PRODUCTS</h1>
-
-              <div class="row products">
-
-                <a href="http://feedback-us.herokuapp.com" target="_blank" class="twelve columns product row">
-                  <div class="four columns icon">
-                    <img src="assets/feedback-me.png" alt="" />
+                <div class="eight columns context details">
+                  <span class="title small splash">Contendify ✅</span>
+                  <div class="u-max-full-width text small">
+                    A web app that changes the way students                    interact with educational topics, whether it’s in the                    workplace, or classroom setting.
                   </div>
-                  <div class="eight columns context">
-                    <span class="title small splash red">Feedback.Me</span>
-                    <div class="u-max-full-width text small">
-                      Led Full Stack team, designed, implemented and shipped entire ERD and Restful API.
-                      Currently in beta, Feedback.Me changes the way feedback is given, received, and acted
-                      upon, whether you’re in the workplace, or classroom setting.
-                    </div>
-                  </div>
-                </a>
+                </div>
+              </a>
 
-                <a href="https://housesquire.herokuapp.com" target="_blank" class="twelve columns product row">
-                  <div class="four columns icon">
-                    <img src="assets/house-squire.png" alt="" />
+              <a href="https://www.auxmusic.io" target="_blank" class="twelve columns product row">
+                <div class="four columns icon">
+                  <img src="assets/aux.png" alt=""/>
+                </div>
+                <div class="eight columns context details">
+                  <span class="title small splash">Aux 🎧</span>
+                  <div class="u-max-full-width text small">
+                    An iOS app that brings the social experience back to music
+                    in a big way. The most natural way to share and discover music.
                   </div>
-                  <div class="eight columns context">
-                    <span class="title small splash red">House Squire</span>
-                    <div class="u-max-full-width text small">
-                      Led Full Stack Web, Architecture, API Development iOS Development team. House Squire
-                      is a web and iOS application that streamlines the way issues and announcements are
-                      handled in shared housing situations, proving a sense of assurance for a better
-                      quality of living for everyone.
-                    </div>
+                </div>
+              </a>
+
+              <a href="http://feedback-us.herokuapp.com" target="_blank" class="twelve columns product row">
+                <div class="four columns icon">
+                  <img src="assets/stories.png" alt="" />
+                </div>
+                <div class="eight columns context details">
+                  <span class="title small splash">Stories ⚡️</span>
+                  <div class="u-max-full-width text small">
+                    An app that allows you to experience the greater community
+                    and cultures from arounf the world through video stories.
                   </div>
-                </a>
+                </div>
+              </a>
 
-              </div>
+              <a href="https://www.auxmusic.io" target="_blank" class="twelve columns product row">
+                <div class="four columns icon">
+                  <img src="assets/parkr.png" alt=""/>
+                </div>
+                <div class="eight columns context details">
+                  <span class="title small splash">Parkr 🚙</span>
+                  <div class="u-max-full-width text small">
+                    An iOS app that make(s) parking great again by turning
+                    convoluted parkings signs into concise, legible parking rules.
+                  </div>
+                </div>
+              </a>
 
+              <a href="http://feedback-us.herokuapp.com" target="_blank" class="twelve columns product row">
+                <div class="four columns icon">
+                  <img src="assets/feedback.png" alt="" />
+                </div>
+                <div class="eight columns context details">
+                  <span class="title small splash">Feedback.Me 📘</span>
+                  <div class="u-max-full-width text small">
+                    A web app that changes the way feedback is given, received,
+                    and acted upon, whether you’re in the workplace, or classroom setting.
+
+                    <!-- Led Full Stack team, designed, implemented and shipped entire ERD and Restful API.
+                    Currently in beta, Feedback.Me changes the way feedback is given, received, and acted
+                    upon, whether you’re in the workplace, or classroom setting. -->
+                  </div>
+                </div>
+              </a>
             </div>
 
-            <div id="projects" class="section content-padding">
+          </div>
 
-              <h1 class="title splash red border">PROJECTS</h1>
+        <div id="projects" class="section">
 
-              <div class="row products">
+          <div class="card">
+            <div class="header">
+              <h1 class="title splash">PROJECTS</h1>
+            </div>
+          </div>
 
-                <div class="twelve columns product row">
-                  <div class="four columns icon">
-                    <img src="assets/feedback-ios.png" alt="" />
-                  </div>
-                  <div class="eight columns context">
-                    <span class="title small splash red">Feedback.me | iOS</span>
-                    <div class="u-max-full-width text small">
-                      Contributed to iOS applicatiopn development team. The mobile version of Feedback.me
-                      compliments our web platform by making feedback not only more of a breeze to send and
-                      receive, but also by making it much more accessible.
-                    </div>
-                  </div>
-                </div>
+          <div class="row products">
 
-                <a href="http://meancourseboard.herokuapp.com/welcome" target="_blank" class="twelve columns product row">
-                  <div class="four columns icon">
-                    <img src="assets/courseboard.png" alt="" />
-                  </div>
-                  <div class="eight columns context">
-                    <span class="title small splash red">Course Board | Contributor</span>
-                    <div class="u-max-full-width text small">
-                      Contributor to Course Board, a course management and mastery tracking solution.
-                      Built mastery tracking system, and added several minor and moderate UI / UX improvements.
-                    </div>
-                  </div>
-                </a>
+            <a href="https://housesquire.herokuapp.com" target="_blank" class="twelve columns product row">
+              <div class="four columns icon">
+                <img src="assets/courseboard.png" alt="" />
+              </div>
+              <div class="eight columns context details">
+                <span class="title small splash">House Squire 🏡</span>
+                <div class="u-max-full-width text small">
+                  A web app that streamlines the way issues and
+                  announcements are handled in shared housing situations.
 
-                <div class="twelve columns product row">
-                  <div class="four columns icon">
-                    <img src="assets/blaze.png" alt="" />
-                  </div>
-                  <div class="eight columns context">
-                    <span class="title small splash red">Blaze | iOS</span>
-                    <div class="u-max-full-width text small">
-                      Led, Developed, designed and shipped an iOS app that allows new and current
-                      cyclists to view incline and personal carbon footprint information for each bike
-                      ride they go on.
-                    </div>
-                  </div>
+                  <!-- Led Full Stack Web, Architecture, API Development iOS Development team. House Squire
+                  is a web and iOS application that streamlines the way issues and announcements are
+                  handled in shared housing situations, proving a sense of assurance for a better
+                  quality of living for everyone. -->
                 </div>
               </div>
+            </a>
 
+            <div class="twelve columns product row">
+              <div class="four columns icon">
+                <img src="assets/feedback-ios.png" alt="" />
+              </div>
 
+              <div class="eight columns context">
+                <span class="title small splash details">Feedback.me 📘📱</span>
+                <div class="u-max-full-width text small">
+                  An iOS app that compliments our web platform, making feedback even
+                  more convenient to give and receive.
+                  <!-- Contributed to iOS app development team. The mobile version of Feedback.me
+                  compliments our web platform by making feedback not only more of a breeze to send and
+                  receive, but also by making it much more accessible. -->
+                </div>
+              </div>
             </div>
 
-            <div id="blog" class="section content-padding">
-
-              <h1 class="title border">BLOG</h1>
-
-              <div class="row margin-standard">
-
-                <div class="six columns card-simple">
-                  <h1>Updates</h1>
-                  <ul>
-                    <li>
-                      <h3 id="date">2016.11.29</h3>
-                      <h3>Medium Integration coming soon...</h3>
-                    </li>
-
-                    <li>
-                      <h3 id="date">2016.11.29</h3>
-                      <h3>Blog Post Description Placeholder</h3>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="six columns card-simple">
-                  <h1>Blog Posts</h1>
+            <a href="http://meancourseboard.herokuapp.com/welcome" target="_blank" class="twelve columns product row">
+              <div class="four columns icon">
+                <img src="assets/courseboard.png" alt="" />
+              </div>
+              <div class="eight columns context details">
+                <span class="title small splash">Course Board 💡</span>
+                <div class="u-max-full-width text small">
+                  A web app that makes signing up for classes seamless, and allows students to view their competencies.
+                  <!-- Contributor to Course Board, a course management and mastery tracking solution.
+                  Built mastery tracking system, and added several minor and moderate UI / UX improvements. -->
                 </div>
               </div>
+            </a>
 
+            <div class="twelve columns product row">
+              <div class="four columns icon">
+                <img src="assets/blaze.png" alt="" />
+              </div>
+              <div class="eight columns context details">
+                <span class="title small splash">Blaze 🚴📱</span>
+                <div class="u-max-full-width text small">
+                  An iOS app that makes biking in the city a little less
+                  dreadful, and you, a little more prepared for the ride.
+                  <!-- Led, Developed, designed and shipped an iOS app that allows new and current
+                  cyclists to view incline and personal carbon footprint information for each bike
+                  ride they go on. -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div id="blog" class="section">
+
+          <div class="card">
+            <div class="header">
+              <h1 class="title splash">BLOG</h1>
+            </div>
+          </div>
+
+          <div class="row margin-standard">
+
+            <div class="six columns card-simple">
+              <h1>Updates</h1>
+              <ul>
+                <li>
+                  <h3 id="date">2016.11.29</h3>
+                  <h3>Medium Integration coming soon...</h3>
+                </li>
+
+                <li>
+                  <h3 id="date">2016.11.29</h3>
+                  <h3>Blog Post Description Placeholder</h3>
+                </li>
+              </ul>
             </div>
 
-            <div id="contact" class="section content-padding">
-
-              <h1 class="title border">CONTACT</h1>
-
-              <div class="margin-standard">
-                <a href="https://github.com/Saturn-V" target="_blank">
-                  <div class="card shadow">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                    <span class="contact link">
-                      @Saturn-V
-                    </span>
-                  </div>
-                </a>
-
-                <a href="https://medium.com/@alexaaron" target="_blank">
-                  <div class="card shadow">
-                    <i class="fa fa-medium" aria-hidden="true"></i>
-                    <span class="contact link">
-                      @alexaaron
-                    </span>
-                  </div>
-                </a>
-
-                <a href="https://www.linkedin.com/in/alexaaronpena/" target="_blank">
-                  <div class="card shadow">
-                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                    <span class="contact link">
-                      Alex Aaron Pena
-                    </span>
-                  </div>
-                </a>
-
-                <a href="mailto:alex.pena@students.makeschool.com">
-                  <div class="card shadow">
-                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                    <span class="contact link">
-                      alex.pena@students.makeschool.com
-                    </span>
-                  </div>
-                </a>
-              </div>
-
-
+            <div class="six columns card-simple">
+              <h1>Blog Posts</h1>
             </div>
           </div>
 
         </div>
 
-      </body>
+        <div id="contact" class="section">
+
+          <div class="card">
+            <div class="header">
+              <h1 class="title splash">CONTACT</h1>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <a href="https://github.com/Saturn-V" target="_blank" class="twelve columns card contact">
+              <!-- <div class="card"> -->
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <span class="contact link">
+                  @Saturn-V
+                </span>
+              <!-- </div> -->
+            </a>
+
+            <a href="https://medium.com/@alexaaron" target="_blank" class="twelve columns card contact">
+              <!-- <div class="card shadow"> -->
+                <i class="fa fa-medium" aria-hidden="true"></i>
+                <span class="contact link">
+                  @alexaaron
+                </span>
+              <!-- </div> -->
+            </a>
+
+            <a href="https://www.linkedin.com/in/alexaaronpena/" target="_blank" class="twelve columns card contact">
+              <!-- <div class="card shadow"> -->
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                <span class="contact link">
+                  Alex Aaron Pena
+                </span>
+              <!-- </div> -->
+            </a>
+
+            <a href="mailto:alex.pena@students.makeschool.com" class="twelve columns card contact">
+              <!-- <div class="card shadow"> -->
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <span class="contact link">
+                  alexaaronpena@gmail.com
+                </span>
+              <!-- </div> -->
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+  </body>
 </html>
